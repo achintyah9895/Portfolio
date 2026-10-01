@@ -35,6 +35,15 @@ import { Download } from 'lucide-vue-next';
                 
                 <div class="flex items-center gap-3 pt-9 flex-col
                 sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
+                <!--hire me-->
+                    <button class="px-6 md:px-7 py-3 rounded-full
+                    relative group w-full sm:w-max flex justify-center bg-[#654321] shadow-lg">
+                        <span class="relative flex item-center text-[#ABD39E] font-semibold
+                        hover:scale-105 transition-all ease-in-out">
+                            Hire Me
+                        </span>
+                    </button>
+                <!--download resume-->
                     <button class="border border-primary px-6
                     md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center">
                         <div class="hover:scale-105 transition-all
@@ -44,9 +53,9 @@ import { Download } from 'lucide-vue-next';
                                 <div class="download-loader text-white
                                 hidden "></div>    
                             </div >
-                            <a href="/Jishnu_Dev.pdf"
+                            <a href="/Portfolio/Jishnu_Dev.pdf"
                             download="Jishnu_Dev.pdf"
-                            class="pl-2 text-primary t">
+                            class="pl-2 text-primary font-semibold">
                             Dowload Resume
                         </a>
                     </div>

@@ -4,6 +4,7 @@
   import 'aos/dist/aos.css'
   import { onMounted } from 'vue';
 import BodySection from './components/BodySection.vue';
+import Education from './components/Education.vue';
 
   onMounted(() => {
     AOS.init({
@@ -19,5 +20,6 @@ import BodySection from './components/BodySection.vue';
   <div className="bg-[#ABD39E] min-h-screen">
     <Header />
     <BodySection />
+    <Education />
   </div>
 </template>
