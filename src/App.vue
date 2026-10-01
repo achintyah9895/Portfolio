@@ -1,10 +1,14 @@
 <script setup>
-  import Header from './components/Header.vue';
-  import AOS from 'aos'
-  import 'aos/dist/aos.css'
-  import { onMounted } from 'vue';
+import Header from './components/Header.vue';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { onMounted } from 'vue';
 import BodySection from './components/BodySection.vue';
 import Education from './components/Education.vue';
+import AboutSection from './components/AboutSection.vue';
+import SkillSection from './components/SkillSection.vue';
+
+
 
   onMounted(() => {
     AOS.init({
@@ -21,5 +25,7 @@ import Education from './components/Education.vue';
     <Header />
     <BodySection />
     <Education />
+    <SkillSection />
+    <AboutSection />
   </div>
 </template>

@@ -4,9 +4,8 @@ import { ref } from 'vue'
     const isMenuOpen = ref(false)
     const menuItems =[
         {name: 'Education', href: '#education'},
-        {name: 'Certificates', href: '#certificates'},
-        {name: 'Skills', href: '#skills'},
-        {name: 'Projects', href: '#projects'},
+        {name: 'Skills & Projects', href: '#skills & projects'},
+        {name: 'Github', href: '#github'},
         {name: 'About', href: '#about'},
     ]
     const scrollToSection = (href) => {
@@ -27,7 +26,7 @@ import { ref } from 'vue'
   <div class="max-w-7xl mx-auto flex justify-between items-center">
       <!--Logo-->
         <div class="text-white text-3xl font-black cursor-pointer">
-            PORTFOLIO<span class="text-primary">.</span>
+            Jishnu<span class="text-primary">Dev</span>.
         </div>
       <!--Navigate-->
         <nav class="hidden md:flex items-center gap-10">
