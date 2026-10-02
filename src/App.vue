@@ -6,7 +6,8 @@ import { onMounted } from 'vue';
 import BodySection from './components/BodySection.vue';
 import Education from './components/Education.vue';
 import AboutSection from './components/AboutSection.vue';
-import SkillSection from './components/SkillSection.vue';
+import Projects from './components/Projects.vue';
+import Contact from './components/Contact.vue';
 
 
 
@@ -25,7 +26,8 @@ import SkillSection from './components/SkillSection.vue';
     <Header />
     <BodySection />
     <Education />
-    <SkillSection />
+    <Projects />
     <AboutSection />
+    <Contact />
   </div>
 </template>

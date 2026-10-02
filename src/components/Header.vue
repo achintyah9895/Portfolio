@@ -4,7 +4,7 @@ import { ref } from 'vue'
     const isMenuOpen = ref(false)
     const menuItems =[
         {name: 'Education', href: '#education'},
-        {name: 'Skills & Projects', href: '#skills & projects'},
+        {name: 'Projects', href: '#projects'},
         {name: 'Github', href: '#github'},
         {name: 'About', href: '#about'},
     ]
@@ -69,7 +69,7 @@ import { ref } from 'vue'
   <ul class="flex flex-col gap-8">
     <li v-for="item in menuItems" :key="item.name">
         <button 
-        @click="scrollToSection(itemm.href)"
+        @click="scrollToSection(item.href)"
         class="text-white text-xl font-semibold 
         hover:text-[#654321] transition-colors">
             {{item.name}}

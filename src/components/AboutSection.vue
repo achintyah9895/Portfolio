@@ -3,7 +3,7 @@
 
 </script>
 <template>
- <section class="text-white mt-20 relative overflow-hidden" id="about">
+ <section class="text-white mt-15 relative overflow-hidden" id="about">
     <div class="max-w-7xl mx-auto px-4 md:grid-cols-2 gap-12
     items-center py-16 xl:px relative z-10">
      <div data-aos="fade-left">
