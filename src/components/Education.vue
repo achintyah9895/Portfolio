@@ -8,7 +8,7 @@ import { Calendar, GraduationCap } from 'lucide-vue-next';
             course: "B.Tech Computer Science Engineering",
             year: "2016-2020",
         },
-        {   university:"",    
+        {   university:null,    
             institution: "Soften Technologies",
             course: "AWS Devops Training",
             year: " 2025-2026",
@@ -56,7 +56,8 @@ import { Calendar, GraduationCap } from 'lucide-vue-next';
                         <Calendar :size="18" class="text-white" />
                         {{ edu.year }}
                     </div>
-                    <p class="text-gray-700 text-sm leading-relaxed ">{{edu.university}}</p>
+                    <p class="text-gray-700 text-sm 
+                    font-semibold mt-2 leading-relaxed ">{{edu.university}}</p>
                   </div>   
             </div>
         </div> 

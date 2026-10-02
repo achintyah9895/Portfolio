@@ -22,7 +22,7 @@ const contactInfo = [
         icon: Link ,
         title: 'LinkedIn',
         value: 'linkedin.com/in/jishnu9895dev',
-        link: 'https://linkedin.com'
+        link: 'https://linkedin.com/in/jishnu9895dev'
     },
        
         {
@@ -59,7 +59,7 @@ const handleSubmit = async () => {
 </script>
 
 <template>
-<section class="py-20 bg-#6d8d82" id="contact">
+<section class="py-20 bg-[#6d8d82"] id="contact">
     <div class="container mx-auto px-4 max-w-6xl">
         <h2 class="text-3xl md:text-5xl font-extrabold
         text-white mb-2">
@@ -69,7 +69,7 @@ const handleSubmit = async () => {
         rounded-2xl">
 
         </div>
-        <div class="grid md:grid-cols gap-8">
+        <div class="grid md:grid-cols-2 gap-8">
               <div>
                 <p class="text-white mb-8 leading-relaxed mt-4">
                     I'm currently looking for opportunities in <span class="font-bold"> AWS, DevOps, Cloud Support, and Linux System
@@ -80,8 +80,8 @@ const handleSubmit = async () => {
                 <div class="space-y-6"> 
                      <div v-for="info in contactInfo" :key="info.id"
                      class="flex item-center gap-4 group">
-                     <div class="w-10 h-10 rounded-fill bg-primary/10
-                     flex item-center justify-center group:hover:bg-primary/20
+                     <div class="w-10 h-10 rounded-full bg-primary/10
+                     justify-center item-center  group-hover:bg-primary/20
                      transition-colors">
                         
                         <component :is="info.icon" size="18" class="text-white" />
@@ -97,7 +97,7 @@ const handleSubmit = async () => {
                             hover:text-white transition-colors"
                             :target="info.title === 'Location' ? 
                             '_self' :'_blank'"
-                            :ref="info.title === 'Location' ? ''
+                            :rel="info.title === 'Location' ? ''
                             : 'noopener noreferrer'">
                         {{info.value}}</a>
                         <p

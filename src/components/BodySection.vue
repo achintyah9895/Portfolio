@@ -1,8 +1,15 @@
 <script setup>
 import { Download } from 'lucide-vue-next';
+import { ref } from 'vue' 
+    const isMenuOpen = ref(false)
 
-
-
+   const scrollToSection = (href) => {
+        isMenuOpen.value = false
+        const element = document.querySelector(href)
+        if(element){
+            element.scrollIntoView({ behavior: 'smooth' })
+        }
+    }
 </script>
 
 
@@ -36,7 +43,9 @@ import { Download } from 'lucide-vue-next';
                 <div class="flex items-center gap-3 pt-9 flex-col
                 sm:flex-row sm:w-max sm:mx-auto lg:mx-0">
                 <!--hire me-->
-                    <button class="px-6 md:px-7 py-3 rounded-full
+                    <button 
+                    @click="scrollToSection('#contact')"
+                    class="px-6 md:px-7 py-3 rounded-full
                     relative group w-full sm:w-max flex justify-center bg-[#654321] shadow-lg">
                         <span class="relative flex item-center text-[#ABD39E] font-semibold
                         hover:scale-105 transition-all ease-in-out">

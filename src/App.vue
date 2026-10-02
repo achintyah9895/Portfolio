@@ -8,6 +8,7 @@ import Education from './components/Education.vue';
 import AboutSection from './components/AboutSection.vue';
 import Projects from './components/Projects.vue';
 import Contact from './components/Contact.vue';
+import Footer from './components/Footer.vue';
 
 
 
@@ -29,5 +30,6 @@ import Contact from './components/Contact.vue';
     <Projects />
     <AboutSection />
     <Contact />
+    <Footer />
   </div>
 </template>
